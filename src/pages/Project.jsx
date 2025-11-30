@@ -9,11 +9,12 @@ export default function ProjectPage() {
   const [error, setError] = useState("");
 
   useEffect(() => {
+    //Use the API to call our project. The controller will then grab it from the DB
     async function fetchProject() {
       try {
         const test = (`${process.env.REACT_APP_API_URL}/api/projects/${projectId}`);
-        console.log(test);
-        const res = await fetch(`${process.env.REACT_APP_API_URL}/api/projects/${projectId}`);
+        console.log(test); //Making sure the url for the API call is correct. (Spoiler, it wasn't, but its fixed now.)
+        const res = await fetch(`${process.env.REACT_APP_API_URL}/api/projects/${projectId}`); //The api call
 
         if (!res.ok) throw new Error("Failed to fetch project");
 

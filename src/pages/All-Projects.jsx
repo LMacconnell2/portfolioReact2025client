@@ -8,9 +8,10 @@ export default function AllProjects() {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
+    //feathcProjects grabs the project data using an API call.
     async function fetchProjects() {
       try {
-        const res = await fetch(`${process.env.REACT_APP_API_URL}/api/projects`);
+        const res = await fetch(`${process.env.REACT_APP_API_URL}/api/projects`); //The API call, which uses a custom variable from an env file
         if (!res.ok) throw new Error("Failed to fetch projects");
 
         const data = await res.json();

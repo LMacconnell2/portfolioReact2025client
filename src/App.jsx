@@ -20,7 +20,7 @@ export default function App() {
         {/* Protected Routes (you’ll add auth logic later) */}
         <Route path="/dashboard" element={<Dashboard />} />
 
-        {/* 404 fallback */}
+        {/* 404 */}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>

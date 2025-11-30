@@ -22,9 +22,6 @@ export default function Login() {
       return;
     }
 
-    // Save token, want to stay logged in when navigating between pages.
-    localStorage.setItem("token", data.token);
-
     // Redirect to dashboard
     navigate("/dashboard");
   };
