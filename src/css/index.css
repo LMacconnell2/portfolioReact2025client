@@ -1,0 +1,152 @@
+body {
+    margin: 0px;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 25px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.nav-link:hover {
+    color: #ddd;
+}
+
+.home-hero {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.home-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.home-projects {
+    background-color: #222;
+    margin: 0px;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.project-card {
+    background-color: #ddd;
+    padding: 25px;
+    margin: 10px;
+    max-width: 200px;
+    border-radius: 25px;
+    border: 2px solid white;
+}
+
+.project-card > h2, .project-card > p {
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+}
+
+footer {
+    background-color: #111;
+    color: white;
+    margin: 0px;
+    padding: 25px;
+}
+
+footer > p {
+    text-align: center;
+    color: white;
+}
+
+.AllProjects-page {
+    display: flex;
+}
+
+.AllProjects-search {
+    background-color: #333;
+    padding: 25px;
+    color: white;
+}
+
+.AllProjects-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+#project-page {
+    background-color: #333;
+    margin: 0px;
+    padding: 25px;
+    color: white;
+}
+.project-header {
+    border-bottom: 1px solid white;
+}
+
+.project-description {
+    border-bottom: 1px solid white;
+}
+
+.project-details {
+    border-bottom: 1px solid white;
+}
+
+.project-links > ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.project-links > ul > li > a {
+    color: #333;
+    background-color: #ddd;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.login-page {
+    background-color: #333;
+    margin: 0;
+    width: 100%;
+    height: 100vh; /* full viewport height */
+    display: flex; /* enable flexbox */
+    justify-content: center; /* center horizontally */
+    align-items: center; /* center vertically */
+}
+
+#login-form-section {
+    background-color: #111;
+    width: 300px;
+    padding: 25px;
+    color: white;
+    border-radius: 25px;
+    border: 1px solid white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* optional: subtle shadow */
+}
+
+#login-register-link, #login-home-link {
+    color: white;
+}
